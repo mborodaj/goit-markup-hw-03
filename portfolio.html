@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -17,31 +17,45 @@
 
   <body>
     <!-- Header -->
-    <header>
-      <a class="logo link" href="./"
-        >Web <span class="logo-header">Studio</span></a
-      >
-      <ul class="site-nav">
-        <li><a class="link" href="./">Студия</a></li>
-        <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-        <li><a class="link" href="">Контакты</a></li>
-      </ul>
-      <address>
-        <ul class="contacts">
-          <li>
-            <a class="contact-link" href=""
-              ><img src="./images/envelope.svg" alt="Пиктограмма почты" />
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-link" href=""
-              ><img src="./images/phone.svg" alt="Пиктограмма телефона" /> +38
-              096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header class="page-header">
+      <div class="header container">
+        <nav class="page-nav">
+          <a class="logo link" href="./"
+            >Web <span class="logo-header">Studio</span></a
+          >
+          <ul class="site-nav">
+            <li class="item"><a class="link" href="./">Студия</a></li>
+            <li class="item">
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="contacts">
+            <li class="item">
+              <a class="contact-link" href=""
+                ><img
+                  class="contacts-logo"
+                  src="./images/envelope.svg"
+                  alt="Пиктограмма почты"
+                />
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a class="contact-link" href=""
+                ><img
+                  class="contacts-logo"
+                  src="./images/phone.svg"
+                  alt="Пиктограмма телефона"
+                />
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <!-- Filter -->

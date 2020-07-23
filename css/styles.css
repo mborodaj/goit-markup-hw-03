@@ -230,7 +230,7 @@ margin-right: 30px;
   letter-spacing: 0.03em;
 }
 
-.advantages-name {
+.advantages-title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -254,11 +254,11 @@ margin-right: 30px;
 }
 
 .advantages-list .item{
-  width: 270px;
+  width: calc((100% - 90px) / 4);
 }
 
 .advantages-list .item:not(:last-child){
-  margin-right: 30px;
+margin-right: 30px;
 }
 
 /* Company direction */
@@ -287,6 +287,10 @@ margin-right: 30px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.direction-list .item{
+  width: calc((100% - 60px) / 3);
 }
 
 .direction-list .item.item:not(:last-child){
@@ -337,6 +341,7 @@ margin-right: 30px;
 }
 
 .team-list .item{
+  width: calc((100% - 90px) / 4);
   background-color: var(--primary-white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -416,8 +421,9 @@ margin-right: 30px;
 }
 
 .examples-list .item{
+  width: calc((100% - 60px) / 3);
   align-items: flex-start;
-  width: 370px;
+  
   margin-right: 30px;
   margin-bottom: 30px;
   outline: 1px solid #EEEEEE;
@@ -455,7 +461,6 @@ margin-right: 30px;
   margin-left: 24px;
   margin-right: 24px;
 
-  /* font-family: roboto; */
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -514,7 +519,7 @@ footer {
 
 .footer-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -530,7 +535,7 @@ footer {
   margin-bottom: 9px;
 }
 
-.footer-contacts-list .item{
+.footer-contacts-list .item:not(:last-child){
   margin-bottom: 9px;
 }
 
@@ -538,22 +543,34 @@ footer {
   display: flex
 }
 
-.company-info{
+.company-information {
+  display: flex;
+  width: 50%;
+}
+
+.company-information .info-item{
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-.social-links{
+.company-info{
+  justify-content: center;
+}
+
+.social-links.info-item{
   margin-top: 72px;
-  margin-left: 69px;
+}
+
+.social-links .social-media-list{
+  justify-content: left;
 }
 
 .subscribe{
   margin-top: 72px;
-  margin-left: 94px;
 }
 
 .social-links .social-media-list{
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin: 0;
 }
